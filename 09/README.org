@@ -32,18 +32,19 @@
    week's material (named =09/=) alongside the existing directories.
 * Module evaluation and feedback
   At this point in the term, you have the opportunity to leave
-  feedback on this module through the anonymous module evaluation
-  process.  A link to the survey is available on the main learn.gold
-  page for this module.  The anonymised module feedback from this
-  process is considered by Department management and by the Learning &
-  Teaching Committee, which try to improve our teaching practices
-  across the board.
+  feedback on this module through the anonymous [[https://moduleevaluation.gold.ac.uk/surveyPrivacyStatement/A2w5HDGtNmjEjarCj][module evaluation
+  process]].  A link to the survey is available on the main [[https://learn.gold.ac.uk/course/view.php?id=6822][learn.gold
+  page for this module]].  The feedback from this process is considered
+  by Department management and by the Department's Learning & Teaching
+  Committee, which try to improve our teaching practices across the
+  board.  Please complete your module evaluation surveys for all your
+  modules, including this one, by the end of this term.
 
   I am separately [[https://learn.gold.ac.uk/mod/feedback/view.php?id=503585][asking you for your feedback]] on some more specific
   aspects of this term; please note that this questionnaire is *not*
   anonymous, and that participation in it is entirely voluntary.  If
   you do feel able to participate in this survey, please do so by
-  *16:00* on *Friday 15th December*.
+  *12:45* on *Monday 11th December*.
 * String matching
   The skeleton files and tests provided give you a framework for
   implementing a number of different string matching algorithms.  You
