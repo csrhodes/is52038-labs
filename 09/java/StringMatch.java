@@ -1,4 +1,4 @@
-public interface StringMatch {
+public abstract class StringMatch {
     public OpCounter counter = new OpCounter();
-    public int match(String text, String pattern);
+    public abstract int match(String text, String pattern);
 }
