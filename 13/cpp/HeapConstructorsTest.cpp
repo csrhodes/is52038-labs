@@ -21,17 +21,17 @@ public:
 void HeapConstructorsTest::testMinimalConstructors() {
   Heap h = Heap(0);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("heap size violation for 0-length heap", 0U, h.heap_size);
-  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, h.array.size());
+  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, (unsigned long) h.array.size());
   std::vector<int> v = std::vector<int>(0);
   h = Heap(v);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("heap size violation for 0-length heap", 0U, h.heap_size);
-  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, h.array.size());
+  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, (unsigned long) h.array.size());
   h = Heap(v, false);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("heap size violation for 0-length heap", 0U, h.heap_size);
-  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, h.array.size());
+  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, (unsigned long) h.array.size());
   h = Heap(v, true);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("heap size violation for 0-length heap", 0U, h.heap_size);
-  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, h.array.size());
+  CPPUNIT_ASSERT_EQUAL_MESSAGE("array length violation for 0-length heap", 0UL, (unsigned long) h.array.size());
 }
 
 void HeapConstructorsTest::testIncrementalConstructor() {
