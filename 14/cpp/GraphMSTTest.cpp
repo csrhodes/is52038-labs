@@ -68,17 +68,17 @@ void GraphMSTTest::testNontrivialMST() {
   CPPUNIT_ASSERT_MESSAGE("edge should be present in MST", h->getEdge("J", "I"));
   CPPUNIT_ASSERT_MESSAGE("edge should be present in MST", h->getEdge("H", "I"));
   CPPUNIT_ASSERT_MESSAGE("edge should be present in MST", h->getEdge("K", "H"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("F", "J"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("F", "I"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("K", "I"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("F", "K"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("J", "H"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("J", "K"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("F", "F"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("H", "H"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("I", "I"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("J", "J"));
-  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", h->getEdge("K", "K"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("F", "J"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("F", "I"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("K", "I"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("F", "K"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("J", "H"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("J", "K"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("F", "F"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("H", "H"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("I", "I"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("J", "J"));
+  CPPUNIT_ASSERT_MESSAGE("edge should not be present in MST", !h->getEdge("K", "K"));
 }
 
 CPPUNIT_TEST_SUITE_NAMED_REGISTRATION(GraphMSTTest, "MST");
