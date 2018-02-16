@@ -5,9 +5,9 @@
 
 class LCG {
 public:
-  LCG(uint32_t, uint32_t, uint32_t, uint32_t);
+  LCG(uint64_t, uint64_t, uint64_t, uint64_t);
   uint32_t next();
-  void seed(uint32_t);
+  void seed(uint64_t);
 };
 
 #endif
