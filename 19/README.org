@@ -30,7 +30,8 @@
   instance.  This pull request should put files under the =19/=
   directory, and I should be able to run =make= and =make test= in a
   language-appropriate subdirectory.  Up to one lab's worth of *bonus
-  points* is available for a perfect submission.
+  points* is available for a perfect submission delivered by *16:00*
+  on *Friday 23rd March*.
 * Assessed submissions
 ** Peer-assessment
    Your assessments of other people's draft summaries are due [[https://learn.gold.ac.uk/mod/workshop/view.php?id=515300][on the
