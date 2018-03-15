@@ -27,6 +27,7 @@ void CompressTrieTest::testCompressOne() {
   Trie *t = new Trie();
   t->insert("one");
   CompressedTrie *c = CompressedTrie::compressTrie(t);
+  CPPUNIT_ASSERT_MESSAGE("compressTrie should return a non-NULL trie", c);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("There should be one entry in the compressed trie", (size_t) 1, c->children.size());
   CPPUNIT_ASSERT_EQUAL_MESSAGE("The entry should be 'one{'", (size_t) 1, c->children.count("one{"));
 }
@@ -37,6 +38,7 @@ void CompressTrieTest::testCompressTwo() {
   t->insert("one");
   t->insert("two");
   CompressedTrie *c = CompressedTrie::compressTrie(t);
+  CPPUNIT_ASSERT_MESSAGE("compressTrie should return a non-NULL trie", c);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("There should be two entries in the compressed trie", (size_t) 2, c->children.size());
   CPPUNIT_ASSERT_EQUAL_MESSAGE("One entry should be 'one{'", (size_t) 1, c->children.count("one{"));
   CPPUNIT_ASSERT_EQUAL_MESSAGE("One entry should be 'two{'", (size_t) 1, c->children.count("two{"));
@@ -48,6 +50,7 @@ void CompressTrieTest::testCompressCommonPrefix() {
   t->insert("one");
   t->insert("only");
   CompressedTrie *c = CompressedTrie::compressTrie(t);
+  CPPUNIT_ASSERT_MESSAGE("compressTrie should return a non-NULL trie", c);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("There should be one entry in the compressed trie", (size_t) 1, c->children.size());
   CPPUNIT_ASSERT_EQUAL_MESSAGE("The entry should be 'on'", (size_t) 1, c->children.count("on"));
   c = c->children["on"];
@@ -67,6 +70,7 @@ void CompressTrieTest::testCompressStock() {
   t->insert("stock");
   t->insert("stop");
   CompressedTrie *c = CompressedTrie::compressTrie(t);
+  CPPUNIT_ASSERT_MESSAGE("compressTrie should return a non-NULL trie", c);
   CPPUNIT_ASSERT_EQUAL_MESSAGE("There should be two entries in the compressed trie", (size_t) 2, c->children.size());
   CPPUNIT_ASSERT_EQUAL_MESSAGE("One entry should be 'b'", (size_t) 1, c->children.count("b"));
   CPPUNIT_ASSERT_EQUAL_MESSAGE("One entry should be 's'", (size_t) 1, c->children.count("s"));

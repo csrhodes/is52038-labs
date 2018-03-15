@@ -5,6 +5,7 @@ CompressedTrie::CompressedTrie() {
 }
 
 CompressedTrie *CompressedTrie::compressTrie(Trie *t) {
+  return NULL;
 }
 
 bool CompressedTrie::query(std::string s) {
